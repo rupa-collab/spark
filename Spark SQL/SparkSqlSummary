@@ -1,0 +1,18 @@
+"""
+QUICK REFERENCE:
+─────────────────────────────────────────────────────────────────
+VIEW TYPE          | Scope         | Database prefix | Persistence
+─────────────────────────────────────────────────────────────────
+Temp View          | Session only  | none            | Lost on session end
+Global Temp View   | All sessions  | global_temp.    | Lost on app end
+Permanent View     | All sessions  | <db>.           | Persists in metastore
+─────────────────────────────────────────────────────────────────
+
+SQL  vs DataFrame API → identical Catalyst plans
+explain() modes:
+  - simple    → physical plan only
+  - extended  → all 4 plan stages
+  - codegen   → generated Java code
+  - cost      → with statistics
+  - formatted → human-readable physical plan
+"""
